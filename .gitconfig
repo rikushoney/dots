@@ -1,2 +1,4 @@
 [commit]
 	gpgsign = on
+[pull]
+	rebase = false
