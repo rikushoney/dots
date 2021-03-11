@@ -8,6 +8,7 @@ git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
 
 mkdir -p "$HOME/.config"
 cp -r $SCRIPT_DIR/nvim "$HOME/.config"
+nvim --headless +PlugInstall +qa
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
